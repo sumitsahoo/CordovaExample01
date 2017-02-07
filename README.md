@@ -3,7 +3,7 @@
 1. Install NodeJS from : https://nodejs.org/en/
 2. Install the current release to test out new features.
 3. Install Cordova and Ionic (for now install ionic but use jQuery Mobile).
-4. Open CMD after NodeJS installation and type below command to install Cordova and Ionic : npm install -g cordova ionic
+4. Open CMD after NodeJS installation and type below command to install Cordova and Ionic : `npm install -g cordova ionic`
 5. Wait for the command to finish installing the components.
 6. That’s it, installation part is over.
 
@@ -15,12 +15,12 @@
 4. cordova create showcontacts com.example.showcontacts ShowContacts
 5. Here “showcontacts” is the project folder, “com.example.showcontacts” is the package name and “ShowContacts” is the project name
 6. Now navigate to project folder : cd showcontacts
-7. Now add Android platform using command: cordova platform add android --save
+7. Now add Android platform using command: `cordova platform add android --save`
 
-8. Make sure you have added ANDROID_HOME path to your environment variable. It usually points to : C:\Users\<user-name>\AppData\Local\Android\sdk
+8. Make sure you have added ANDROID_HOME path to your environment variable. It usually points to : `C:\Users\<user-name>\AppData\Local\Android\sdk`
 9. Where “user-name” is the Windows user folder name.
 10. If ANDROID_HOME variable doesn’t exist then you might get an error while adding Android platform.
-11. Now add contacts plugin, since we are going to read contacts we need to add the cordova plugin for that. Command : cordova plugin add cordova-plugin-contacts
+11. Now add contacts plugin, since we are going to read contacts we need to add the cordova plugin for that. Command : `cordova plugin add cordova-plugin-contacts`
 12. Know more about usage of the plugin here : https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-contacts/index.html
 13. Now navigate to “www” folder and edit “index.html”. “www” folder is where we will do all the coding.
 14. Replace the meta tag with below value to bypass content violation issues (because server hosting and access is being done on same machine)
@@ -61,7 +61,7 @@
     <!-- /page  -->
     ```
 18. Now navigate to “js” folder which is inside “www” folder. Edit “index.js” file and add below content. Replace the existing ones as we don’t need those codes and will be proceeding with simple jQuery to keep it simple.
-    ```html
+    ```javascript
     document.addEventListener("deviceready", onDeviceReady, false);
 
     function onDeviceReady(){
@@ -95,9 +95,9 @@
     };
     ```
 19. The code is quite simple, we are just querying for all the contacts using contacts plugin for android and forming a html to show all the contacts inside a div tag.
-20. Now to compile the code use command : cordova build android
+20. Now to compile the code use command : `cordova build android`
 21. Wait for command to finish. For first time it will download gladle plugin, so it may take a while.
-22. Now once build is done connect your Android device and run the project. To run the App use command : cordova run android
+22. Now once build is done connect your Android device and run the project. To run the App use command : `cordova run android`
 23. On first app launch you need to allow contacts access (Marshmallow and above). Once access is allowed you can see the list of the contacts inside body segment.
 24. That’s it. Simple, isn’t it ?
 
