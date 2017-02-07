@@ -4,6 +4,7 @@
 2. Install the current release to test out new features.
 3. Install Cordova and Ionic (for now install ionic but use jQuery Mobile).
 4. Open CMD after NodeJS installation and type below command to install Cordova and Ionic : 
+
          ```npm install -g cordova ionic```
 5. Wait for the command to finish installing the components.
 6. That’s it, installation part is over.
@@ -16,7 +17,10 @@
 4. cordova create showcontacts com.example.showcontacts ShowContacts
 5. Here “showcontacts” is the project folder, “com.example.showcontacts” is the package name and “ShowContacts” is the project name
 6. Now navigate to project folder : cd showcontacts
-7. Now add Android platform using command: cordova platform add android --save
+7. Now add Android platform using command: 
+
+         ```cordova platform add android --save```
+
 8. Make sure you have added ANDROID_HOME path to your environment variable. It usually points to : C:\Users\<user-name>\AppData\Local\Android\sdk
 9. Where “user-name” is the Windows user folder name.
 10. If ANDROID_HOME variable doesn’t exist then you might get an error while adding Android platform.
