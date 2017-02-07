@@ -2,7 +2,7 @@
 
 1. Install NodeJS from : https://nodejs.org/en/
 2. Install the current release to test out new features.
-3. Install Cordova and Ionic (for now install ionic but use jQuery Mobile).
+3. Install Cordova and Ionic (for now install ionic but use jQuery Mobile). More about jQuery Mobile : http://jquerymobile.com/
 4. Open CMD after NodeJS installation and type below command to install Cordova and Ionic : `npm install -g cordova ionic`
 5. Wait for the command to finish installing the components.
 6. That’s it, installation part is over.
