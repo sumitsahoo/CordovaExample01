@@ -24,15 +24,19 @@
 12. Know more about usage of the plugin here : https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-contacts/index.html
 13. Now navigate to “www” folder and edit “index.html”. “Www” folder is where we will do all the coding.
 14. Replace the meta tag with below value to bypass content violation issues (because server hosting and access is being done on same machine)
+
     ```
     <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
     ```
+    
 15. After that add jQuery and jQuery Mobile plugins and stylesheet. Copy over the below content
+
     ```
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
     ```
+    
 16. Now read some intro to jQuery Mobile : http://demos.jquerymobile.com/1.4.5/intro/
 17. Modify body tag of HTML with below content
     ```html
