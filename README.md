@@ -66,14 +66,14 @@
 
     function onDeviceReady(){
 
-      // find all contacts
-      var options = new ContactFindOptions();
-      options.filter = "";
-      options.multiple = true;
-      var filter = ["displayName", "addresses"];
+        // find all contacts
+        var options = new ContactFindOptions();
+        options.filter = "";
+        options.multiple = true;
+        var filter = ["displayName", "addresses"];
 
-      $.mobile.loading("show");
-      navigator.contacts.find(filter, onSuccess, onError, options);
+        $.mobile.loading("show");
+        navigator.contacts.find(filter, onSuccess, onError, options);
 
     }
 
@@ -83,15 +83,15 @@
 
     function onSuccess(contacts) {
         for (var i = 0; i < contacts.length; i++) {
-        contactsHtml += "<p>" + contacts[i].displayName + "</p><hr>\n";
+            contactsHtml += "<p>" + contacts[i].displayName + "</p><hr>\n";
         }
-      $('.ui-content').html(contactsHtml);
-      $.mobile.loading("hide");
+        $('.ui-content').html(contactsHtml);
+        $.mobile.loading("hide");
     };
 
     function onError(contactError) {
         $.mobile.loading("hide");
-      alert("Unable to retrieve contacts.");
+        alert("Unable to retrieve contacts.");
     };
     ```
 19. The code is quite simple, we are just querying for all the contacts using contacts plugin for android and forming a html to show all the contacts inside a div tag.
