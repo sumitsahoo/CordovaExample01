@@ -12,10 +12,10 @@
 
 1. Goal is to make an App which reads contacts from contact database using cordova plugin.
 2. Create a folder where you want to store cordova project files
-3. Navigate to that folder and open command line tool then create a cordova project using below command
-4. cordova create showcontacts com.example.showcontacts ShowContacts
+3. Navigate to that folder and open command line tool then create a cordova project using command `cordova create showcontacts com.example.showcontacts ShowContacts`
+4. Wait for the command to finish creating the cordova project        
 5. Here “showcontacts” is the project folder, “com.example.showcontacts” is the package name and “ShowContacts” is the project name
-6. Now navigate to project folder : cd showcontacts
+6. Now navigate to project folder : `cd showcontacts`
 7. Now add Android platform using command: `cordova platform add android --save`
 
 8. Make sure you have added ANDROID_HOME to your environment variable (Windows) and path variable contains %ANDROID_HOME% variable  defined. It usually points to : `C:\Users\<user-name>\AppData\Local\Android\sdk`
