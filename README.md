@@ -18,7 +18,7 @@
 6. Now navigate to project folder : cd showcontacts
 7. Now add Android platform using command: `cordova platform add android --save`
 
-8. Make sure you have added ANDROID_HOME path to your environment variable. It usually points to : `C:\Users\<user-name>\AppData\Local\Android\sdk`
+8. Make sure you have added ANDROID_HOME to your environment variable (Windows) and path variable contains %ANDROID_HOME% variable  defined. It usually points to : `C:\Users\<user-name>\AppData\Local\Android\sdk`
 9. Where “user-name” is the Windows user folder name.
 10. If ANDROID_HOME variable doesn’t exist then you might get an error while adding Android platform.
 11. Now add contacts plugin, since we are going to read contacts we need to add the cordova plugin for that. Command : `cordova plugin add cordova-plugin-contacts`
