@@ -71,7 +71,7 @@
         var options = new ContactFindOptions();
         options.filter = "";
         options.multiple = true;
-        var filter = ["displayName", "addresses"];
+        var filter = ["displayName"];   // Add the properties you want to fetch. Add property separated by ','
 
         $.mobile.loading("show");
         navigator.contacts.find(filter, onSuccess, onError, options);
