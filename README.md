@@ -30,7 +30,7 @@
     <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
     ```
     
-15. After that add jQuery and jQuery Mobile plugins and stylesheet. Copy over the below content. Currently using jQuery Core 2.2.4 as jQuery Mobile has some issues with core 3.x versions (as of today i.e. 08/02/2017).
+15. After that add jQuery Core, jQuery Mobile and stylesheet. Copy over the below content. Currently using jQuery Core 2.2.4 as jQuery Mobile has some issues with core 3.x versions (as of today i.e. 08/02/2017).
 
     ```
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
