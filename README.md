@@ -59,6 +59,9 @@
         <!-- /footer -->
 
     </div>
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
     <!-- /page  -->
     ```
 18. Now navigate to “js” folder which is inside “www” folder. Edit “index.js” file and add below content. Replace the existing ones as we don’t need those codes and will be proceeding with simple jQuery to keep it simple.
