@@ -1,4 +1,4 @@
-#Cordova Setup :
+# Cordova Setup :
 
 1. Install NodeJS from : https://nodejs.org/en/
 2. Install the current release to test out new features.
@@ -8,7 +8,7 @@
 6. Wait for the command to finish installing the components.
 7. That’s it, installation part is over.
 
-#Show All Contacts App : 
+# Show All Contacts App : 
 
 1. Goal is to make an App which reads contacts from contact database using cordova plugin.
 2. Create a folder where you want to store cordova project files
